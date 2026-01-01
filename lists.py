@@ -31,11 +31,18 @@ def find_max(numbers):
 def reverse_list(lst):
     result = []
 
+    if len(lst) == 0: return
+
     for i in range(len(lst)-1, -1, -1):
         result.append(lst[i])
     return result
 
 # Task 4.4: Remove duplicates (4 points)
 # Write a function `remove_duplicates(lst)` that removes duplicates from a list while keeping the original order.
-
-# Example: `[1, 2, 2, 3, 4, 3, 5]` → `[1, 2, 3, 4, 5]`
+def remove_duplicates(lst):
+    result = []
+    
+    for i in range(len(lst)):
+        if lst[i] not in result:
+            result.append(lst[i])
+    return result
