@@ -31,3 +31,14 @@ last_name = "Esi"
 print(f"String concatenation: {first_name + ' ' + last_name}")
 print(f"String repetition: {first_name * 3}")
 print(f"String length: {len(first_name)}")
+
+# Task 1.4: Type conversion
+str_int = int("42")
+float_int = int(3.14)
+int_str = str(100)
+str_bool = bool("True")
+
+print(f"String to Integer: {str_int}")
+print(f"Float to Integer: {float_int}")
+print(f"Integer to String: {int_str}")
+print(f"String to Boolean: {str_bool}")
