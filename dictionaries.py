@@ -17,7 +17,7 @@ student = {
 
 def word_frequency(sentence):
     result = {}
-    for word in sentence.split(' '):
+    for word in sentence.split():
         if word not in result:
             result[word] = 1
         else:
