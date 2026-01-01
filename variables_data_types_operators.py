@@ -13,3 +13,14 @@ print(f"Float value: {price}, datatype: {type(price)}")
 print(f"String value: {name}, datatype: {type(name)}")
 print(f"Boolean value: {isExisting}, datatype: {type(isExisting)}")
 print(f"None value: {value}, datatype: {type(value)}")
+
+# Task 1.2: Perform arithmetic operations
+addition = 47 + 23
+subtraction = 100 - 37
+multiplication = 12 * 8
+division = 144 / 12
+floor_division = 17 // 5
+modulus = 17 % 5
+expo = 2 ** 10
+
+print(addition, subtraction, multiplication, division, floor_division, modulus, expo)
