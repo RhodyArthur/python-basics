@@ -18,7 +18,6 @@ fruits.pop(3)
 
 def find_max(numbers):
     max_num = float("-inf")
-
     for i in range(len(numbers)):
         if numbers[i] > max_num:
             max_num = numbers[i]
@@ -46,3 +45,13 @@ def remove_duplicates(lst):
         if lst[i] not in result:
             result.append(lst[i])
     return result
+
+# Task 4.5: Find common elements (4 points)
+# Write a function `find_common(list1, list2)` that finds and returns common elements between two lists.
+
+def find_common(list1, list2):
+    common_elements = []
+    for i in range(len(list1)):
+        if list1[i] in list2:
+            common_elements.append(list1[i])
+    return common_elements
