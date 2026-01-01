@@ -14,15 +14,15 @@ def rectangle_metrics(length, width):
     area = length * width
     perimeter = (2 * length) + (2 * width)
 
-    return f"Area and perimeter of rectangle respectively: {area, perimeter}"
+    return area, perimeter
 
 
 # Task 3.4: Function using *args
 # Write a function `sum_all(*args)` that returns the sum of any number of arguments passed to it.
 def sum_all(*args):
     total = 0
-    for i in range(len(args)):
-        total += args[i]
+    for num in args:
+        total += num
 
     return total
 

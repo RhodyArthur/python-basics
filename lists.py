@@ -17,10 +17,10 @@ fruits.pop(3)
 # Write a function `find_max(numbers)` that finds the maximum value in a list **WITHOUT** using the built-in `max()` function.
 
 def find_max(numbers):
-    max_num = float("-inf")
-    for i in range(len(numbers)):
-        if numbers[i] > max_num:
-            max_num = numbers[i]
+    max_num = numbers[0]
+    for num in numbers:
+        if num > max_num:
+            max_num = num
 
     return max_num
 
@@ -41,9 +41,9 @@ def reverse_list(lst):
 def remove_duplicates(lst):
     result = []
     
-    for i in range(len(lst)):
-        if lst[i] not in result:
-            result.append(lst[i])
+    for el in lst:
+        if el not in result:
+            result.append(el)
     return result
 
 # Task 4.5: Find common elements (4 points)
@@ -51,7 +51,7 @@ def remove_duplicates(lst):
 
 def find_common(list1, list2):
     common_elements = []
-    for i in range(len(list1)):
-        if list1[i] in list2:
-            common_elements.append(list1[i])
+    for el in list1:
+        if el in list2:
+            common_elements.append(el)
     return common_elements
