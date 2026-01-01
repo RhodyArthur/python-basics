@@ -1,9 +1,4 @@
 # Task 2.1: Number classification function
-# Write a function `classify_number(num)` that takes a number and returns:
-# - "Positive" if number > 0
-# - "Negative" if number < 0
-# - "Zero" if number == 0
-
 def classify_number(num):
     if num == 0:
         return "Zero"
@@ -14,10 +9,33 @@ def classify_number(num):
 
 
 # Task 2.2: Age category function
-# Write a function `age_category(age)` that returns:
-# - "Child" if age < 13
-# - "Teenager" if 13 <= age < 20
-# - "Adult" if 20 <= age < 65
-# - "Senior" if age >= 65
+def age_category(age):
+    if age <= 0:
+        return "Age can't be less than or equal to 0"
+    
+    if age < 13:
+        return "Child"
+    elif (age >= 13 and age < 20):
+        return "Teenager"
+    elif (age >= 20 and age < 65):
+        return "Adult"
+    else:
+        return "Senior"
+    
 
-# def age_category(age):
+# Task 2.3: FizzBuzz (4 points)
+# Write a function `fizzbuzz(n)` that prints numbers 1 to n, but:
+# - For multiples of 3, print "Fizz" instead of the number
+# - For multiples of 5, print "Buzz" instead of the number
+# - For multiples of both 3 and 5, print "FizzBuzz"
+
+def fizzbuzz(n):
+    for i in range(1, n+1):
+        if (i % 3 == 0 and i % 5 == 0):
+            print("FizzBuzz")
+        elif (i % 3 == 0):
+            print("Fizz")
+        elif (i % 5 == 0):
+            print("Buzz")
+        else:
+            print(i)
