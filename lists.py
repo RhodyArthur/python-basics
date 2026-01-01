@@ -11,7 +11,7 @@ fruits.append('pear')
 fruits[2] = 'coconut'
 fruits.remove('mango')
 fruits.pop(3)
-# print(fruits)
+print(fruits)
 
 # Task 4.2: Find maximum (4 points)
 # Write a function `find_max(numbers)` that finds the maximum value in a list **WITHOUT** using the built-in `max()` function.
