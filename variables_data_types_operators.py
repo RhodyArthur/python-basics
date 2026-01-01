@@ -1,6 +1,4 @@
-# Task 1.1
-# Create variables for: an integer, float, string, boolean, and None type.
-# Print each with its type using `type()`.
+# Task 1.1 Create variables of different types
 
 age = 24
 price = 23.99
@@ -24,3 +22,12 @@ modulus = 17 % 5
 expo = 2 ** 10
 
 print(addition, subtraction, multiplication, division, floor_division, modulus, expo)
+
+
+# Task 1.3: String operations
+first_name = "Maame"
+last_name = "Esi"
+
+print(f"String concatenation: {first_name + ' ' + last_name}")
+print(f"String repetition: {first_name * 3}")
+print(f"String length: {len(first_name)}")
