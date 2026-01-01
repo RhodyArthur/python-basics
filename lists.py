@@ -11,7 +11,7 @@ fruits.append('pear')
 fruits[2] = 'coconut'
 fruits.remove('mango')
 fruits.pop(3)
-print(fruits)
+# print(fruits)
 
 # Task 4.2: Find maximum (4 points)
 # Write a function `find_max(numbers)` that finds the maximum value in a list **WITHOUT** using the built-in `max()` function.
@@ -24,3 +24,18 @@ def find_max(numbers):
             max_num = numbers[i]
 
     return max_num
+
+
+# Task 4.3: Reverse a list (4 points)
+# Write a function `reverse_list(lst)` that reverses a list **WITHOUT** using `reverse()` or `[::-1]` slicing.
+def reverse_list(lst):
+    result = []
+
+    for i in range(len(lst)-1, -1, -1):
+        result.append(lst[i])
+    return result
+
+# Task 4.4: Remove duplicates (4 points)
+# Write a function `remove_duplicates(lst)` that removes duplicates from a list while keeping the original order.
+
+# Example: `[1, 2, 2, 3, 4, 3, 5]` → `[1, 2, 3, 4, 5]`
