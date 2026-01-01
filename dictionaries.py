@@ -23,3 +23,17 @@ def word_frequency(sentence):
         else:
             result[word] = result[word] + 1
     return result
+
+# Task 5.3: Merge dictionaries (4 points)
+# Write a function `merge_dicts(dict1, dict2)` that merges two dictionaries. If keys overlap, values from dict2 should overwrite dict1.
+
+def merge_dicts(dict1, dict2):
+    return {**dict1,**dict2}
+
+    
+
+# Task 5.4: Invert dictionary (4 points)
+# Write a function `invert_dict(d)` that inverts a dictionary (keys become values, values become keys). Assume all values are unique.
+
+def invert_dict(d):
+    return {value: key for key, value in d.items()}
