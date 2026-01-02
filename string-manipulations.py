@@ -26,3 +26,15 @@ def capitalize_words(sentence):
     return ' '.join([word[0].upper()+word[1::] for word in sentence.split()])
 
 print(capitalize_words("A man a plan a canal Panama"))
+
+
+# Task 8.4: Remove whitespace (3 points)
+# Write a function `remove_whitespace(s)` that removes all whitespace from a string.
+
+def remove_whitespace(s):
+    return ''.join(s)
+
+# Task 8.5: Check if numeric (3 points)
+# Write a function `is_numeric(s)` that checks if a string contains only digits.
+def is_numeric(s):
+    return s.isdigit()
