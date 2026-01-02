@@ -32,7 +32,7 @@ print(capitalize_words("A man a plan a canal Panama"))
 # Write a function `remove_whitespace(s)` that removes all whitespace from a string.
 
 def remove_whitespace(s):
-    return ''.join(s)
+    return ''.join(s.split())
 
 # Task 8.5: Check if numeric (3 points)
 # Write a function `is_numeric(s)` that checks if a string contains only digits.
