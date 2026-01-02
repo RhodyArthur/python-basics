@@ -15,8 +15,4 @@ tuple_nums = [(num, num**2) for num in range(1, 6)]
 # Write a function `flatten(nested_list)` that flattens a 2D list using list comprehension.
 # Example: `[[1, 2], [3, 4], [5]]` → `[1, 2, 3, 4, 5]`
 def flatten(nested_list):
-    result = []
-    for num in nested_list:
-        for i in num:
-            result.append(i)
-    return result
+    return [i for num in nested_list for i in num]
